@@ -4,7 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 
-class Coupon extends Model
+class Hostel extends Model
 {
     //
 	    /**
@@ -12,7 +12,10 @@ class Coupon extends Model
      *
      * @var array
      */
+	 
+	protected $primaryKey = 'rollno';
+	
     protected $fillable = [
-        'name', 'rollno', 'email','blocked',
+        'name', 'email',
     ];
 }
